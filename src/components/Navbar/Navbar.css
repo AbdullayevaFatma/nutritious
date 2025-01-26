@@ -1,0 +1,136 @@
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar span {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: var(--main-color);
+  display: inline-block;
+  /* text-shadow: 2px 2px 4px rgba(0, 249, 120, 0.1); */
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.navbar-menu li {
+  cursor: pointer;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-icons button {
+  background: transparent;
+  font-size: 16px;
+  border: 1px solid var(--highlight-color);
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.navbar-icons button:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 4px rgb(171, 171, 171);
+  
+}
+.navbar-menu .active{
+  position: relative;
+  padding: 0 10px;
+}
+
+.navbar-menu .active:after {
+  /* padding-bottom: 2px; 
+  border-bottom: 2px solid var(--highlight-color); */
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--highlight-color);
+  transition: 0.3s;
+}
+.navbar-menu .active:hover:after{
+  width: 100%;
+}
+
+
+.navbar-search-icon {
+  position: relative;
+}
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+}
+
+@media (max-width: 1050px) {
+  .navbar span {
+    font-size: 30px;
+  }
+  .navbar-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-icons{
+    gap: 30px;
+
+  }
+  .navbar-icons img{
+    width: 22px;
+  }
+  .navbar-icons button{
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar span {
+    font-size: 28px;
+  }
+  .navbar-menu{
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar-icons{
+    gap: 20px;
+
+  }
+  .navbar-icons img{
+    width: 20px;
+  }
+  .navbar-icons button{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-menu{
+    display: none;
+  }
+}
