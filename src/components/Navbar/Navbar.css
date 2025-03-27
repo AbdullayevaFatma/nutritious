@@ -43,7 +43,7 @@
   cursor: pointer;
   transition: 0.5s;
   color: var(--text-color);
-  transition: 0.3s;
+  
 }
 
 .navbar-icons button:hover {
@@ -66,17 +66,17 @@
   bottom: -10px;
   left: 0;
   background-color: var(--highlight-color);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .navbar-menu .active:hover:after{
   width: 100%;
 }
 
 
-.navbar-search-icon {
+.navbar-cart-icon {
   position: relative;
 }
-.navbar-search-icon .dot {
+.navbar-cart-icon .dot {
   position: absolute;
   min-width: 10px;
   min-height: 10px;

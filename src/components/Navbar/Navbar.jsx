@@ -38,7 +38,7 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
       <div className="navbar-icons">
         <img src={assets.search_icon} alt="search-icon" />
-        <div className="navbar-search-icon">
+        <div className="navbar-cart-icon">
           <Link to="/cart">
             <img src={assets.basket_icon} alt="basket-icon" />
           </Link>
