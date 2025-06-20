@@ -1,7 +1,7 @@
 .header {
   height: 45vw;
   margin: 30px auto;
-  background: url("./header_background.jpg");
+  background: url("/header_background.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
